@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tela de Compra</title>  
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: rgb(255, 255, 255);
+    }
+
+    #area-cabecalho {
+      background-color: #0000CD;
+      padding: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-align: left;
+      border-radius: 20px;
+      border-bottom: solid black 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    #area-menu a:link,
+    #area-menu a:visited {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    #area-menu a:hover,
+    #area-menu a:active {
+      color: #0000CD;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+    }
+
+    #sign-login a {
+      margin: 10px;
+      padding: 5px 15px;
+      color: #0000CD;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    #sign-login a:hover {
+      color: black;
+    }
+
+    header {
+      background-color: mediumblue;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+
+    .section-title {
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .product-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 2px solid mediumblue;
+      border-radius: 10px;
+      background-color: white;
+      padding: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .product-image {
+      width: 100px;
+      height: 100px;
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: gray;
+      font-size: 1rem;
+      flex-shrink: 0;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .product-name {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: mediumblue;
+    }
+
+    .product-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .product-actions button {
+      background-color: mediumblue;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .product-actions button:hover {
+      background-color: #000080;
+    }
+
+    footer {
+      background-color: mediumblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 2px solid mediumblue;
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    @media (max-width: 768px) {
+      .product-box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-actions {
+        flex-direction: row;
+        margin-top: 20px;
+      }
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("https://media.discordapp.net/attachments/1370075258639618134/1370085365121024172/fundo-do-controlador-de-videogame-online-com-espaco-de-texto_1017-54747.png?ex=681e36ee&is=681ce56e&hm=3a7d0e6fa0177141a90de437f352a87508dab839470680d4d82402ac60f427fd&=&format=webp&quality=lossless&width=1745&height=1163");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="area-cabecalho">
+    <div id="area-menu">
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </div>
+    <div id="sign-login">
+      <a href="#">Entrar</a>
+      <a href="#">Cadastrar</a>
+    </div>
+  </div>
+
+  <header>
+    GameShop
+  </header>
+
+  <div class="section-title">Compra de Produtos</div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+
+  <div class="product-box">
+    <div class="product-image">Imagem do Produto</div>
+
+    <div class="product-details">
+      <div class="product-name">Nome do Produto</div>
+      <div class="product-description">
+        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+      </div>
+    </div>
+
+    <div class="product-actions">
+      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="comprarProduto()">Comprar</button>
+    </div>
+  </div>
+  <footer>
+    © 2025 Loja Online. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function verAvaliacoes() {
+      alert("Você clicou em Avaliações!");
+    }
+
+    function comprarProduto() {
+      alert("Produto adicionado ao carrinho!");
+    }
+  </script>
+</body>
+</html>
