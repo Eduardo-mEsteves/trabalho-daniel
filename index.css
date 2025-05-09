@@ -224,3 +224,59 @@ nav a{
     border: solid black 5px;
 }
 
+/*Pagina Produto -------------------------------------------------------------*/
+.pgProdutoOrg {
+  display: flex;
+  margin-bottom: 10rem;
+  margin-top: 8rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  column-gap: 15rem;
+  justify-content: center;
+}
+.imgPgProduto {
+  width: 300px;
+  border-radius: 10px;
+}
+.organizacaoTxtProduto {
+  display: flex;
+  row-gap: 3rem;
+  flex-direction: column;
+}
+.nomeProduto {
+  font-size: xx-large;
+ color: #f5f5f5;
+}
+.precoProduto {
+  font-weight: 600;
+  font-size: larger;
+  color: red;
+}
+.descricaoProduto {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  color: #f5f5f5;
+  font-size: large;
+}
+.botaoCompraPgProduto {
+ background-color: #0000CD;
+  color: #f1f1f1;
+  border-radius: 30px;
+  font-size: x-large;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 3rem;
+  text-decoration: none;
+  transition: 350ms;
+}
+.botaoCompraPgProduto:hover {
+  font-weight: 600;
+  color: whitesmoke;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 25px;
+}
