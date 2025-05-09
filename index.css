@@ -225,7 +225,8 @@ nav a{
     border: solid black 5px;
 }
 
-/*Pagina Produto -------------------------------------------------------------*/
+/*Pagina Produto*/
+
 .pgProdutoOrg {
   display: flex;
   margin-bottom: 10rem;
@@ -235,10 +236,41 @@ nav a{
   column-gap: 15rem;
   justify-content: center;
 }
+
+.pgProdutoOrg h1, h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pgProdutoOrg p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pgProdutoOrg h2 {
+    background-color: #0000CD;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .imgPgProduto {
-  width: 300px;
+  width: 350px;
+  height: 450px; 
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgPgProduto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
   border-radius: 10px;
 }
+
+
 .organizacaoTxtProduto {
   display: flex;
   row-gap: 3rem;
@@ -260,8 +292,9 @@ nav a{
   color: #f5f5f5;
   font-size: large;
 }
+
 .botaoCompraPgProduto {
- background-color: #0000CD;
+  background-color: #0000CD;
   color: #f1f1f1;
   border-radius: 30px;
   font-size: x-large;
@@ -275,6 +308,28 @@ nav a{
   transition: 350ms;
 }
 .botaoCompraPgProduto:hover {
+  font-weight: 600;
+  color: whitesmoke;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 25px;
+}
+
+.botaoVoltarPgProduto {
+  background-color: #0000CD;
+  color: #f1f1f1;
+  border-radius: 30px;
+  font-size: x-large;
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 3rem;
+  text-decoration: none;
+  transition: 350ms;
+}
+.botaoVoltarProduto:hover {
   font-weight: 600;
   color: whitesmoke;
   width: 10rem;
