@@ -6,13 +6,14 @@
   <title>Tela de Compra</title>  
   <style>
     body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
       background-color: white;
       color: rgb(255, 255, 255);
     }
 
     #area-cabecalho {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       background-color: #0000CD;
       padding: 10px;
       padding-top: 0;
@@ -71,11 +72,12 @@
       text-align: center;
       font-size: 1.8rem;
       font-weight: bold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .product-box {
       display: flex;
-      justify-content: space-between;
+      gap:20px;
       align-items: flex-start;
       border: 2px solid mediumblue;
       border-radius: 10px;
@@ -85,6 +87,8 @@
       max-width: 1000px;
       margin: 0 auto 40px auto;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
+      box-sizing: border-box;
     }
 
     .product-image {
@@ -101,16 +105,19 @@
     }
 
     .product-details {
-      flex: 1;
-      margin: 0 20px;
+      flex: 1 1 0;
+      min-width: 200px;
     }
 
     .product-name {
       font-size: 1.5rem;
       margin-bottom: 10px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #0000CD;
     }
 
     .product-description {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       font-size: 1rem;
       color: mediumblue;
     }
@@ -178,156 +185,278 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url("https://media.discordapp.net/attachments/1370075258639618134/1370085365121024172/fundo-do-controlador-de-videogame-online-com-espaco-de-texto_1017-54747.png?ex=681e36ee&is=681ce56e&hm=3a7d0e6fa0177141a90de437f352a87508dab839470680d4d82402ac60f427fd&=&format=webp&quality=lossless&width=1745&height=1163");
+      background-image: url(imagens-daniel/fundo-azul.png);
+      background-attachment: fixed;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       min-height: 100vh;
     }
+
+    #area-menu a:link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #area-menu a:visited {
+      color: white;
+      font-size: 20px;
+  }
+
+  #area-menu a:hover {
+      color: #0000CD;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  #area-menu a:active {
+      color: black;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  #sign-login a:link {
+      margin: 10px;
+      padding: 15px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      color: #0000CD;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 20px;
+  }
+
+  #sign-login a:visited {
+      margin: 10px;
+      padding: 15px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      color: #0000CD;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 20px;
+  }
+
+  #sign-login a:hover {
+      margin: 10px;
+      padding: 15px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      color: #000000;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 20px;
+  }
+
+  #sign-login a:active {
+      margin: 10px;
+      padding: 15px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      color: #0000CD;
+      background-color: white;
+      border-radius: 20px;
+      font-size: 20px;
+  }
+  #area-cabecalho {
+      background-color: #0000CD;
+      padding: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
+      text-align: left;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom: solid black 4px;
+      display: flex;
+      justify-content: space-between; 
+      align-items: flex-start; 
+      box-sizing: border-box;
+      width: 100%;
+  }
+
+  #lateral-cabecalho {
+      text-decoration: none;
+      margin-bottom: 30px;
+      margin-right: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+      gap: 15px;
+      margin-top: auto; 
+  }
+
+  footer {
+    background-color: mediumblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10%;
+    height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+  footer img {
+      width: 90px;
+      height: auto;
+  }
+
+  footer nav {
+      margin-top: 1%;
+  }
+  nav a:link {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+  }
+
+  nav a:visited {
+      color: white;
+      font-size: 20px;
+  }
+
+  nav a:hover {
+      color: #0000CD;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  nav a:active {
+      color: black;
+      background-color: white;
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  nav a{
+      padding-left: 5px;
+      padding-right: 5px;
+  }
   </style>
 </head>
+
 <body>
+
   <div id="area-cabecalho">
-    <div id="area-menu">
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
-    </div>
-    <div id="sign-login">
-      <a href="#">Entrar</a>
-      <a href="#">Cadastrar</a>
-    </div>
-  </div>
 
-  <header>
-    GameShop
-  </header>
+    <div id="area-logo">
+        <img src="imagens-daniel/logo-ia.png" style="width: 300px; height: 300px; padding-bottom: 0;">
+    </div>
 
-  <div class="section-title">Compra de Produtos</div>
+    <aside id="lateral-cabecalho">
+        <div id="sign-login">
+            <a href="signup.html">Sign Up </a>
+            <a href="login.html">Log in </a>
+        </div>
+        <div id="area-menu">
+            <a href="index.html">Home </a>|
+            <a href="teladecompra1.html">Ps5 </a>|
+            <a href="teladecompra2.html">Xbox </a>|
+            <a href="teladecompra3.html">Nintendo Switch </a>|
+            <a href="teladecompra4.html">Gift Cards </a>|
+            <a href="teladecompra5.html">Acessórios </a>
+        </div>
+    </aside>
+</div>
+
+  <div class="section-title">Seção de Produtos</div>
 
   <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
+    <div class="product-image"></div>
 
     <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
+      <div class="product-name">Produto</div>
       <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+        Descrição do Produto
       </div>
     </div>
 
     <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="verAvaliacoes()" style="background-color: white;">Avaliações</button>
       <button onclick="comprarProduto()">Comprar</button>
     </div>
   </div>
 
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
+    <div class="product-box">
+    <div class="product-image"></div>
 
     <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
+      <div class="product-name">Produto</div>
       <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+        Descrição do Produto
       </div>
     </div>
 
     <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="verAvaliacoes()" style="background-color: white;">Avaliações</button>
       <button onclick="comprarProduto()">Comprar</button>
     </div>
   </div>
-
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
+    <div class="product-box">
+    <div class="product-image"></div>
 
     <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
+      <div class="product-name">Produto</div>
       <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+        Descrição do Produto
       </div>
     </div>
 
     <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="verAvaliacoes()" style="background-color: white;">Avaliações</button>
       <button onclick="comprarProduto()">Comprar</button>
     </div>
   </div>
-
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
+    <div class="product-box">
+    <div class="product-image"></div>
 
     <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
+      <div class="product-name">Produto</div>
       <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+        Descrição do Produto
       </div>
     </div>
 
     <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="verAvaliacoes()" style="background-color: white;">Avaliações</button>
       <button onclick="comprarProduto()">Comprar</button>
     </div>
   </div>
-
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
+    <div class="product-box">
+    <div class="product-image"></div>
 
     <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
+      <div class="product-name">Produto</div>
       <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
+        Descrição do Produto
       </div>
     </div>
 
     <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
+      <button onclick="verAvaliacoes()" style="background-color: white;">Avaliações</button>
       <button onclick="comprarProduto()">Comprar</button>
     </div>
   </div>
 
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
-
-    <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
-      <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
-      </div>
-    </div>
-
-    <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
-      <button onclick="comprarProduto()">Comprar</button>
-    </div>
-  </div>
-
-  <div class="product-box">
-    <div class="product-image">Imagem do Produto</div>
-
-    <div class="product-details">
-      <div class="product-name">Nome do Produto</div>
-      <div class="product-description">
-        Este é um exemplo de descrição do produto. Pode conter detalhes importantes sobre o item, como qualidade, uso e benefícios.
-      </div>
-    </div>
-
-    <div class="product-actions">
-      <button onclick="verAvaliacoes()">Avaliações</button>
-      <button onclick="comprarProduto()">Comprar</button>
-    </div>
-  </div>
+  
   <footer>
-    © 2025 Loja Online. Todos os direitos reservados.
+    <img src="imagens-daniel/logo-ia.png">© 2025 Loja Online. Todos os direitos reservados.
+    <br>
+    <nav>
+        <a href="index.html">Home </a>|
+        <a href="teladecompra1.html">Ps5 </a>|
+        <a href="teladecompra2.html">Xbox </a>|
+        <a href="teladecompra3.html">Nintendo Switch </a>|
+        <a href="teladecompra4.html">Gift Cards </a>|
+        <a href="teladecompra5.html">Acessórios </a>
+    </nav>
   </footer>
 
-  <script>
-    function verAvaliacoes() {
-      alert("Você clicou em Avaliações!");
-    }
-
-    function comprarProduto() {
-      alert("Produto adicionado ao carrinho!");
-    }
-  </script>
 </body>
 </html>

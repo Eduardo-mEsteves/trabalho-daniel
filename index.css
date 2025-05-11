@@ -294,18 +294,18 @@ nav a{
 }
 
 .botaoCompraPgProduto {
-  background-color: #0000CD;
-  color: #f1f1f1;
-  border-radius: 30px;
-  font-size: x-large;
-  display: flex;
-  margin-top: 2rem;
-  justify-content: center;
-  align-items: center;
-  width: 9rem;
-  height: 3rem;
-  text-decoration: none;
-  transition: 350ms;
+    margin-top: 110px;
+    background-color: #0000CD;
+    color: #f1f1f1;
+    border-radius: 30px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 3rem;
+    text-decoration: none;
+    transition: 350ms;
 }
 .botaoCompraPgProduto:hover {
   font-weight: 600;
@@ -329,7 +329,7 @@ nav a{
   text-decoration: none;
   transition: 350ms;
 }
-.botaoVoltarProduto:hover {
+.botaoVoltarPgProduto:hover {
   font-weight: 600;
   color: whitesmoke;
   width: 10rem;
