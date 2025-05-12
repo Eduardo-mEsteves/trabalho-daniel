@@ -7,7 +7,7 @@
 .body-img{
     margin: 0;
     padding: 0;
-    background-image: url("https://cdn.discordapp.com/attachments/1370075258639618134/1370085365121024172/fundo-do-controlador-de-videogame-online-com-espaco-de-texto_1017-54747.png?ex=681e36ee&is=681ce56e&hm=3a7d0e6fa0177141a90de437f352a87508dab839470680d4d82402ac60f427fd&");
+    background-image: url("imagens-daniel/fundo-azul.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,4 +26,8 @@
   object-fit: contain;
   margin-left: 10px;
   display: block;
+}
+
+a {
+    font-size: 150%;
 }
