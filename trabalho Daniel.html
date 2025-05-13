@@ -12,20 +12,100 @@
       color: rgb(255, 255, 255);
     }
 
-    #area-cabecalho {
-      background-color: #0000CD;
-      padding: 10px;
-      padding-top: 0;
-      padding-bottom: 0;
-      text-align: left;
-      border-radius: 20px;
-      border-bottom: solid black 4px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      box-sizing: border-box;
-      width: 100%;
-    }
+    #area-menu a:link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#area-menu a:visited {
+    color: white;
+    font-size: 20px;
+}
+
+#area-menu a:hover {
+    color: #0000CD;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#area-menu a:active {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#sign-login a:link {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#sign-login a:visited {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#sign-login a:hover {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #000000;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#sign-login a:active {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#area-cabecalho {
+    background-color: #0000CD;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid black 4px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#lateral-cabecalho {
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    gap: 15px;
+    margin-top: auto; 
+}
 
     #area-menu a:link,
     #area-menu a:visited {
@@ -229,16 +309,26 @@ nav a{
 </head>
 <body>
   <div id="area-cabecalho">
-    <div id="area-menu">
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
-    </div>
-    <div id="sign-login">
-      <a href="#">Entrar</a>
-      <a href="#">Cadastrar</a>
-    </div>
-  </div>
+
+            <div id="area-logo">
+                <img src="https://media.discordapp.net/attachments/1370075258639618134/1370103329312608386/f8aec8fc-45b6-41e1-8ad4-15cc844f291f.png?ex=68243668&is=6822e4e8&hm=09f4e93651be3b4a82fae927c008c3f74b652e95612edeec7d21e5a35e48be05&=&format=webp&quality=lossless&width=1290&height=1290" style="width: 300px; height: 300px; padding-bottom: 0;">
+            </div>
+
+            <aside id="lateral-cabecalho">
+                <div id="sign-login">
+                    <a href="signup.html">Sign Up </a>
+                    <a href="login.html">Log in </a>
+                </div>
+                <div id="area-menu">
+                    <a href="index.html">Home </a>|
+                    <a href="teladecompra1.html">Ps5 </a>|
+                    <a href="teladecompra2.html">Xbox </a>|
+                    <a href="teladecompra3.html">Nintendo Switch </a>|
+                    <a href="teladecompra4.html">Gift Cards </a>|
+                    <a href="teladecompra5.html">Acessórios </a>
+                </div>
+            </aside>
+        </div>
 
   <header>
     GameShop
