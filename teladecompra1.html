@@ -193,100 +193,132 @@
       min-height: 100vh;
     }
 
-    #area-menu a:link {
+   footer {
+    background-color: mediumblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10%;
+    height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+footer img {
+    width: 90px;
+    height: auto;
+}
+
+footer nav {
+    margin-top: 1%;
+}
+
+#area-menu {
+    padding-right: 410px;
+}
+
+#area-menu a:link {
     color: white;
     font-size: 20px;
     text-decoration: none;
-  }
+}
 
-  #area-menu a:visited {
-      color: white;
-      font-size: 20px;
-  }
+#area-menu a:visited {
+    color: white;
+    font-size: 20px;
+}
 
-  #area-menu a:hover {
-      color: #0000CD;
-      background-color: white;
-      border-radius: 10px;
-      padding: 5px;
-  }
+#area-menu a:hover {
+    color: #0000CD;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
 
-  #area-menu a:active {
-      color: black;
-      background-color: white;
-      border-radius: 10px;
-      padding: 5px;
-  }
+#area-menu a:active {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
 
-  #sign-login a:link {
-      margin: 10px;
-      padding: 15px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-      color: #0000CD;
-      background-color: white;
-      border-radius: 20px;
-      font-size: 20px;
-  }
+#sign-login {
+    margin-bottom: 8em;
+}
 
-  #sign-login a:visited {
-      margin: 10px;
-      padding: 15px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-      color: #0000CD;
-      background-color: white;
-      border-radius: 20px;
-      font-size: 20px;
-  }
+#sign-login a:link {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
 
-  #sign-login a:hover {
-      margin: 10px;
-      padding: 15px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-      color: #000000;
-      background-color: white;
-      border-radius: 20px;
-      font-size: 20px;
-  }
+#sign-login a:visited {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
 
-  #sign-login a:active {
-      margin: 10px;
-      padding: 15px;
-      padding-bottom: 5px;
-      padding-top: 5px;
-      color: #0000CD;
-      background-color: white;
-      border-radius: 20px;
-      font-size: 20px;
-  }
+#sign-login a:hover {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #000000;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#sign-login a:active {
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #0000CD;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
   #area-cabecalho {
-      background-color: #0000CD;
-      padding: 10px;
-      padding-top: 0;
-      padding-bottom: 0;
-      text-align: left;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border-bottom: solid black 4px;
-      display: flex;
-      justify-content: space-between; 
-      align-items: flex-start; 
-      box-sizing: border-box;
-      width: 100%;
-  }
+    background-size: cover;
+    background: linear-gradient(to right, #1a0dab, #3b2fc3, #0000CD);
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: solid black 4px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    box-sizing: border-box;
+    height: 15em;
+}
 
-  #lateral-cabecalho {
-      text-decoration: none;
-      margin-bottom: 30px;
-      margin-right: 5%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; 
-      gap: 15px;
-      margin-top: auto; 
-  }
+
+#lateral-cabecalho {
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: auto;
+}
+  
 
   footer {
     background-color: mediumblue;
@@ -343,26 +375,27 @@
 
 <body>
 
-  <div id="area-cabecalho">
+ <div id="area-cabecalho">
 
-    <div id="area-logo">
-        <img src="imagens-daniel/logo-ia.png" style="width: 300px; height: 300px; padding-bottom: 0;">
-    </div>
+  <div id="area-logo">
+      <img src="imagens-daniel/logo-ia.png" style="width: 225px; height: auto; padding-bottom: 0;">
+  </div>
 
-    <aside id="lateral-cabecalho">
-        <div id="sign-login">
-            <a href="signup.html">Sign Up </a>
-            <a href="login.html">Log in </a>
-        </div>
-        <div id="area-menu">
-            <a href="index.html">Home </a>|
-            <a href="teladecompra1.html">Ps5 </a>|
-            <a href="teladecompra2.html">Xbox </a>|
-            <a href="teladecompra3.html">Nintendo Switch </a>|
-            <a href="teladecompra4.html">Gift Cards </a>|
-            <a href="teladecompra5.html">Acessórios </a>
-        </div>
-    </aside>
+  <aside id="lateral-cabecalho">
+      <div id="sign-login">
+          <a href="signup.html">Sign Up </a>
+          <a href="login.html">Log in </a>
+      </div>
+      <div id="area-menu">
+          <a href="index.html">Home </a>|
+          <a href="teladecompra1.html">Ps5 </a>|
+          <a href="teladecompra2.html">Xbox </a>|
+          <a href="teladecompra3.html">Nintendo Switch </a>|
+          <a href="teladecompra4.html">Gift Cards </a>|
+          <a href="teladecompra5.html">Acessórios </a>
+      </div>
+  </aside>
+
 </div>
 
   <div class="section-title">Seção de Produtos</div>
