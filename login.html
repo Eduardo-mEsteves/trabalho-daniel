@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar / Cadastrar </title>
+</head>
+<body>
+    <div class="container">
+       <div id="login">
+            <div class="col-40 text-login">
+                <h2>BEm vindo!</h2>
+                <h4>Informe seu usuário e senha pra acessar:</h4>
+            </div>
+            <div class="col-60 form-login">
+                <h3>Login</h3>
+                <form class="form-login">
+                    <input type="email" name="email" placeholder="Seu E-mail" required>
+                    <input type="password" name="senha" placeholder="Sua Senha" required>
+                    <button name="logar">Acessar</button>
+                    <p>Não tem cadastro ainda?
+                        <a href="#cadastro">Cadastre-se aqui</a>
+                    </p>
+                </form>
+            </div>          
+       </div>
+       <div id="cadastro">
+            <div class="col-60 form-login">  
+                <form class="form-login">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="text" name="telefone" placeholder="Seu Telefone" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <input type="password" name="senha" placeholder="Crie uma senha" required>
+                    <button name="cadastrar">Cadastrar</button>
+                    <p>Já tem cadastro?
+                        <a href="#login">Acesse clicando aqui</a>
+                    </p>
+            </form> 
+            </div>
+            <div class="col-40 text-login">
+                <h2>Cadastre-se</h2>
+                <h4>Complete o seu cadastro preenchendo o formulario:</h4>
+            </div>
+       </div>
+</body>
+</html>
