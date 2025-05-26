@@ -1,5 +1,6 @@
 ## 🎮 GameShop - Site de Jogos Físicos
-[Documentação Sistema 1.1.docx](https://github.com/user-attachments/files/20358035/Documentacao.Sistema.1.1.docx)
+[Documentação Sistema 1.1.docx](https://github.com/user-attachments/files/20444937/Documentacao.Sistema.1.1.docx)
+
 
 
 
