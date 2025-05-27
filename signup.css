@@ -10,10 +10,36 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: auto; /* evita ocupar toda a tela */
+}
+
 #cadastro {
-  background-color: white;
   color: black;
-  border-radius: 12px;
+  max-width: 400px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#cadastro h2,
+#cadastro h3,
+#cadastro h4 {
+  font-size: 20px;
+  margin: 5px 0;       
+}
+#cadastro p{
+  font-size: 15px;
+  margin: 5px 0;
+}
+#cadastro input,
+#cadastro button {
+  margin: 5px 0;
+  padding: 6px 10px;
+  font-size: 0.9rem;
 }
 
 h2, h4 {
@@ -59,18 +85,9 @@ a {
   color: mediumblue;
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Responsividade extra para dispositivos muito pequenos */
-@media (max-width: 576px) {
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  button {
-    font-size: 0.95rem;
-  }
 }
